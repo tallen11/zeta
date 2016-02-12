@@ -15,7 +15,7 @@ const char *const cContents[] = {
 	"}\n"
 };
 
-const uint8_t makeFileContentsSize = 10;
+const uint8_t makeFileContentsSize = 11;
 const char *const makeFileContents[] = {
 	"CC=clang\n",
 	"DEBUG=-g\n",
@@ -26,7 +26,8 @@ const char *const makeFileContents[] = {
 	"\n",
 	"clean:\n",
 	"\trm -rf *.o\n",
-	"\trm -rf {E}\n"
+	"\trm -rf {E}\n",
+	"\trm -rf *.dSYM"
 };
 
 void printUsage();
